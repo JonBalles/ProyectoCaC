@@ -1,0 +1,39 @@
+header{
+    height: 180px;
+    width: 100%;
+    background-color: yellow;
+    flex-direction: column;
+    
+}
+
+#logo{
+    margin: 10px;
+    height: 70px;
+    width: 150px;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#navbar li {
+    font-size: 26px;
+    margin: 5px
+}
+
+#pagesNav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+   
+}
