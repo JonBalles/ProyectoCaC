@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaC Proyecto</title>
     <link rel="stylesheet" href="./CSS/allStyles.css" />
-    <script src="/JS/banner.js"></script>
+    <script defer src="/JS/banner.js"></script>
   </head>
   <body>
     <header>
       <a href="/"><img src="./IMG/CaC.png" id="logo" alt="logo" /></a>
       <nav id="navbar">
         <ul id="pagesNav">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/pagina1.html">Pagina 1</a></li>
-          <li><a href="/pagina2.html">Pagina 2</a></li>
-          <li><a href="/pagina3.html">Pagina 3</a></li>
+          <li><a class="link" href="/index.html"><span>Home</span></a></li>
+          <li><a class="link" href="/pagina1.html"><span>Pagina 1</span></a></li>
+          <li><a class="link" href="/pagina2.html"><span>Pagina 2</span></a></li>
+          <li><a class="link" href="/pagina3.html"><span>Pagina 3</span></a> </li>
         </ul>
       </nav>
     </header>
-    <h1>Bienvenidos a mi Home</h1>
     <main class="mainHome">
         <section class="banner">
-          <div class="carousel-js">
-            <div class="img">
-              <div class="img"><img src="/IMG/CaC.png" alt="img1"></div>
+            <div>
+              <div class="img"><img src="/IMG/1 (1).jpg" alt="img1"></div>
               <div class="img"><img src="/IMG/1 (2).jpg" alt="img2"></div>
               <div class="img"><img src="/IMG/1 (3).jpg" alt="img3"></div>
             </div>
             <div class="botonera">
-              <button id="prevBtn"><span>Anterior</span></button>
-              <button id="nextBtn"><span>Siguiente</span></button>
+              <button id="prevBtn"><span><</span></button>
+              <button id="nextBtn"><span>></span></button>
             </div>
-          </div>
+        </section>
+
+        <section class="texto">
+          
+          <div class="info">
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio odit voluptatem debitis ducimus sunt est sint doloremque accusantium mollitia, aperiam, corrupti laboriosam natus consectetur temporibus ad omnis minus dolorum.</span>          </div>
         </section>
     </main>
     <footer>

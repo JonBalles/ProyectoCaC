@@ -1,69 +1,80 @@
-.mainHome{
+.mainHome {
     height: 1000px;
     width: 100%;
-    display: flex;
-
+    flex-direction: column;
 }
 
-.banner{
-top: 0;
-display: flex;
-height: 400px;
-width: 100%;
-border: 1px black solid;
+/* Carrousel */
+.banner {
+    top: 0;
+    width: 100%;
 }
 
-.img{
+.img {
     height: 400px;
+    width: 100%;
 }
 
-.img img{
+.img img {
     width: 100%;
     height: 100%;
-    object-fit: scale-down;
+    object-fit: cover;
 }
 
-.botonera{
+.botonera {
     display: flex;
     justify-content: space-between;
 }
-.botonera button{
-    background: #fff;
+
+.botonera button {
+    background: var(--otro);
     border: none;
-    padding: 10px 20px;
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
-    width: 120px;
+    width: 30px;
+    height: 30px;
     text-transform: uppercase;
     cursor: pointer;
     transform: skew(-21deg);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
 }
 
-.botonera span{
+.botonera span {
     display: inline-block;
     transform: skew(21deg);
 }
 
-.botonera button::before{
+.botonera button::before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     right: 100%;
     left: 0;
-    background: rgb(20, 20, 20);
+    background: var(--secundario);
     opacity: 0;
     z-index: -1;
-    transition: all 0.5s;
+    transition: all 0.2s;
+    border-radius: 50%;
 }
 
 .botonera button:hover {
-    color: #fff;
+    color: var(--otro);
 }
 
 .botonera button:hover::before {
     left: 0;
     right: 0;
     opacity: 1;
-  }
+}
+
+/*Contenido de la pagina*/
+.mainHome .texto {
+    border: 1px solid black;
+    height: 250px;
+    width: 100%;
+    margin: 50px 0;
+}
