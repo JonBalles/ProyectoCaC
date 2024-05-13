@@ -1,6 +1,6 @@
 footer{
     bottom: 0;
-    background-color: yellow;
+    background-color: var(--verde);
     height: 120px;
     width: 100%;
     display: flex;

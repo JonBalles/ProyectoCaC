@@ -1,6 +1,69 @@
-main{
+.mainHome{
     height: 1000px;
     width: 100%;
     display: flex;
-    justify-content: center;
+
 }
+
+.banner{
+top: 0;
+display: flex;
+height: 400px;
+width: 100%;
+border: 1px black solid;
+}
+
+.img{
+    height: 400px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.botonera{
+    display: flex;
+    justify-content: space-between;
+}
+.botonera button{
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+}
+
+.botonera span{
+    display: inline-block;
+    transform: skew(21deg);
+}
+
+.botonera button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.botonera button:hover {
+    color: #fff;
+}
+
+.botonera button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
