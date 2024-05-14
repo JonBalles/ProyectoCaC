@@ -2,12 +2,17 @@
     height: 1000px;
     width: 100%;
     flex-direction: column;
+    justify-content: center;
 }
 
 /* Carrousel */
 .banner {
+    position: relative;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
@@ -23,6 +28,9 @@
 
 .botonera {
     display: flex;
+    position: absolute;
+    top: 50%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -40,6 +48,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    margin: 0 10px;
 }
 
 .botonera span {
@@ -73,8 +82,99 @@
 
 /*Contenido de la pagina*/
 .mainHome .texto {
-    border: 1px solid black;
-    height: 250px;
+    flex-direction: column;
+    display: flex;
+    height: 800px;
     width: 100%;
     margin: 50px 0;
+    overflow: hidden;
 }
+
+.info {
+    height: 250px;
+    width: 100%;
+    word-break: normal;
+    text-align: left;
+    padding: 25px;
+    font-size: 26px;
+    margin-left: 10px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.texto .subtitulo {
+    font-size: 40px;
+    margin-left: 80px;
+}
+
+.info span {
+    display: none;
+}
+
+.info:hover {
+    background-color: var(--otro);
+}
+
+.info:hover span {
+    text-align: left;
+    width: 80%;
+    overflow: hidden;
+    display: inline-block;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out 0.3s forwards;
+    /* La animación durará 1 segundo, comenzará 1 segundo después de que se cargue la página y se detendrá al finalizar */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+        /* Comienza fuera del área visible hacia la izquierda */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Se desplaza hacia la derecha hasta su posición original */
+    }
+}
+
+
+.container {
+    position: relative;
+    width: 1000px;
+    /* Ancho del div */
+    height: 200px;
+    /* Alto del div */
+    border: 1px solid black;
+    /* Borde negro de 1px */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda */
+}
+
+.animacion {
+    width: 0;
+    /* Inicialmente el div estará vacío */
+    height: 100%;
+    /* Altura completa del div */
+    background-color: black;
+    /* Color inicial del fondo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease;
+    /* Transición de la anchura */
+}
+
+.animacion.active {
+    width: 70%;
+    /* Anchura del div al 90% */
+}
+
+
+/*  
+
+Pasar el mouse y que se descubra el span desde un lado. Subtitulo fijo
+
+
+*/

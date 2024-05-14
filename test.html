@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <script>
+        function startAnimation() {
+            document.querySelector('.animacion').classList.add('active');
+        }
+
+        function resetAnimation() {
+            document.querySelector('.animacion').classList.remove('active');
+        }
+    </script>
+    <style>
+       
+
+        .container {
+            position: relative;
+            width: 1000px;
+            /* Ancho del div */
+            height: 200px;
+            /* Alto del div */
+            border: 1px solid black;
+            /* Borde negro de 1px */
+            overflow: hidden;
+            /* Oculta el contenido que se desborda */
+        }
+
+        .animacion {
+            width: 0;
+            /* Inicialmente el div estará vacío */
+            height: 100%;
+            /* Altura completa del div */
+            background-color: black;
+            /* Color inicial del fondo */
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 1s ease;
+            /* Transición de la anchura */
+        }
+
+        .animacion.active {
+            width: 70%;
+            /* Anchura del div al 90% */
+        }
+    </style>
+    <div class="animacion1"></div>
+   
+    <div class="container">
+        <div class="test"></div>
+    </div>
+</body>
+
+</html>

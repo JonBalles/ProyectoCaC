@@ -9,10 +9,12 @@ header{
 #logo{
     margin: 10px;
     height: 70px;
-    width: 150px;
+    width: 170px;
     background-color: black;
     top: 0;
     left: 0;
+    border-radius: 10px;
+    object-fit: scale-down;
 }
 
 #navbar{
