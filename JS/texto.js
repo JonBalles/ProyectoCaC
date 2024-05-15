@@ -1,12 +1,10 @@
-let divAnimado = document.querySelector('.test');
+let divAnimado = document.querySelector('.fondo');
+let divContainer = document.querySelector(".info")
 
-console.log(divAnimado)
-divAnimado.addEventListener("mouseenter", () => {
-    console.log("Estoy in");
+divContainer.addEventListener("mouseenter", () => {
     divAnimado.classList.add("active");
 });
 
-divAnimado.addEventListener("mouseleave", () => {
-    console.log("Estoy out");
+divContainer.addEventListener("mouseleave", () => {
     divAnimado.classList.remove("active");
 });
