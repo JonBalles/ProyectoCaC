@@ -1,0 +1,39 @@
+.maqueta{
+    display: grid;
+    background-color: var(--fondo);
+    
+
+}
+.btn-ws{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    animation: pulse 2s infinite alternate;
+}
+
+.container-present{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    padding: 1em;
+    font-size: 2em;
+
+
+}
+
+.parrafo-codeo{
+    display:grid;
+    place-items: center;
+}
+.img{
+    border-radius: 2%;
+    box-shadow: -5px 10px 0px var(--secundario);
+}
+
+.nh-titulo{
+    font-size: 2em;
+    padding: 20px;
+
+}
+
