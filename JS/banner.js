@@ -1,14 +1,30 @@
+const img = document.getElementsByClassName("img");
+const dotBox = document.querySelector(".puntitos")
 let indice = 0;
 
-function mostrarImg() {
-  const img = document.getElementsByClassName("img");
+function puntitos(){
+  for(i =0 ; i < 3 ; i++){
+    let puntito = document.createRange().createContextualFragment(`
+    <label class="label" for="${img[i]}">
+    <input id="${"dot"+[i]}" type="radio" name="grupoBanner">
+    <div class="button">
+    <span class="shadow"></span>
+    `)
+    dotBox.append(puntito);
+  }
+  let check = document.getElementById(`dot${indice}`)
+// Lo dejo aca pero la idea es que tome el indice actual para ubicar el punto activo y darle color
+ // check.check
   
-  //Iterar sobre las imagenes cargadas para que no se vean
+}
+
+function mostrarImg() {
+  
   for (let i = 0; i < img.length; i++) {
-    img[i].style.display = "none";
+    img[i].style.display = "none";  
   }
   indice++;
-  
+
   if (indice >= img.length) {
     indice = 0;
   } else if (indice <= 0) {
@@ -27,4 +43,7 @@ document.getElementById("nextBtn").addEventListener("click", () => {
   mostrarImg();
 });
 
+
+
+puntitos();
 mostrarImg();
