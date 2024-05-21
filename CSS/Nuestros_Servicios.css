@@ -4,7 +4,6 @@
     padding: 0 15px;   /* Padding a los lados */
 }
 
-/* Resto de tu CSS */
 #services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -25,13 +24,3 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 600px) {
-    #services {
-        gap: 10px;
-        padding: 0 5px;
-    }
-
-    .service {
-        padding: 10px;
-    }
-}
