@@ -35,6 +35,8 @@
 }
 
 .nh-titulo{
+    display: grid;
+    place-items: center;
     font-size: 2em;
     padding: 1em;
 
@@ -70,7 +72,7 @@
 }
 
 .galeriapr img:hover{
-    cursor: crosshair;
+    cursor:pointer;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
