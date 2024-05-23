@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Servicios</title>
     <link rel="stylesheet" href="CSS/allStyles.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <header>
     <a href="/"><img src="./IMG/CaC.png" id="logo" alt="logo" /></a>
     <nav id="navbar">
+      <button id="menu-toggle" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul id="pagesNav">
-         
-        <li><a class="link" href="index.html"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+        <li><a class="link" href="index.html">
           <i class="fas fa-home"></i>
           <span>Home</span></a></li>
         <li><a class="link" href="Sobre-Nosotros.html"><span>Sobre nosotros</span></a></li>
         <li><a class="link" href="Nuestros_servicios.html"><span>Nuestros servicios</span></a></li>
-        <li><a class="link" href="pagina3.html"><span>Contacto</span></a> </li>
+        <li><a class="link" href="pagina3.html"><span>Contacto</span></a></li>
       </ul>
+      <button id="menu-close" aria-label="Close menu" style="display: none;">
+        <i class="fas fa-times"></i>
+      </button>
     </nav>
   </header>
   <main>
@@ -51,9 +55,10 @@
         </div>
     </div>
   </main>
-    <footer>
-        <p>Proyecto Integrador</p>
-        <small>Pagina no comercial - Proyecto de CaC FullStack Phyton</small>
-    </footer>
+  <footer>
+    <p>Proyecto Integrador</p>
+    <small>Pagina no comercial - Proyecto de CaC FullStack Phyton</small>
+  </footer>
+  <script src="JS/main.js"></script>
 </body>
 </html>
