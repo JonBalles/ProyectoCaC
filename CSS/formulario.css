@@ -1,0 +1,101 @@
+/* Estilos generales del formulario */
+.form-wrapper {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main {
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #1c681c; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 0 20px; 
+    width: 100%; 
+}
+
+
+/* Estilos para los campos de entrada, select y textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: #f44336;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para el enlace de ayuda */
+.form-help {
+    margin-top: 10px;
+}
+
+/* Estilos para el campo de aceptar términos y condiciones */
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la etiqueta de aceptar términos y condiciones */
+.terms label {
+    margin-left: 5px;
+}
+
+/* Estilo para la estrella roja de campos obligatorios*/
+.required::after {
+    content: '*'; 
+    color: red;  
+    margin-left: 5px; 
+}
+

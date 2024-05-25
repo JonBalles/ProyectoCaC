@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/allStyles.css">
+    <link rel="stylesheet" href="/CSS/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+    
+  <header>
+    <a href="/"><img src="./IMG/CaC.png" id="logo" alt="logo" /></a>
+    <nav id="navbar">
+      <ul id="pagesNav">
+        <li><a class="link" href="/index.html"><span>Home</span></a></li>
+        <li><a class="link" href="/Sobre-Nosotros.html"><span>Sobre Nosotros</span></a></li>
+        <li><a class="link" href="/Nuestros_servicios.html"><span>Nuestros Servicios</span></a></li>
+        <li><a class="link" href="/formulario.html"><span>Contacto</span></a></li>
+      </ul>
+    </nav>
+  </header>
+        <main>
+          <h1 id="TituloPagina3">CONTACTATE CON NOSOTROS</h1>
+          <section class="form-wrapper">
+              <form id="formContact" novalidate action="#">
+                  <div class="form-control">
+                      <label for="firstname">Nombre <span class="required">*</span></label>
+                      <input type="text" name="firstname" id="firstname" required>
+                  </div>
+                  <div class="error" id="error-firstname"></div>
+                  <div class="form-control">
+                      <label for="lastname">Apellido <span class="required">*</span></label>
+                      <input type="text" name="lastname" id="lastname">
+                  </div>
+                  <div class="error" id="error-lastname"></div>
+                  <div class="form-control">
+                      <label for="email">Email <span class="required">*</span></label>
+                      <input type="email" name="email" id="email" required>
+                  </div>
+                  <div class="error" id="error-email"></div>
+                  <div class="form-control">
+                      <label for="phone">Teléfono</label>
+                      <input type="tel" name="phone" id="phone">
+                  </div>
+                  <div class="form-control">
+                      <label for="website">Sitio web</label>
+                      <input type="url" name="website" id="website">
+                  </div>
+                  <div class="form-control">
+                      <label for="country">País <span class="required">*</span></label>
+                      <select name="country" id="country" class="form-select" required>
+                          <option value="">Seleccione su país</option>
+                          <option value="AR">Argentina</option>
+                          <option value="AU">Australia</option>
+                          <option value="AT">Austria</option>
+                          <option value="BD">Bangladesh</option>
+                          <option value="BE">Bélgica</option>
+                          <option value="BR">Brasil</option>
+                          <option value="CA">Canadá</option>
+                          <option value="CL">Chile</option>
+                          <option value="CN">China</option>
+                          <option value="CO">Colombia</option>
+                          <option value="CR">Costa Rica</option>
+                          <option value="HR">Croacia</option>
+                          <option value="CZ">República Checa</option>
+                          <option value="DK">Dinamarca</option>
+                          <option value="EG">Egipto</option>
+                          <option value="FI">Finlandia</option>
+                          <option value="FR">Francia</option>
+                          <option value="DE">Alemania</option>
+                          <option value="GR">Grecia</option>
+                          <option value="HK">Hong Kong</option>
+                          <option value="HU">Hungría</option>
+                          <option value="IN">India</option>
+                          <option value="ID">Indonesia</option>
+                          <option value="IR">Irán</option>
+                          <option value="IE">Irlanda</option>
+                          <option value="IL">Israel</option>
+                          <option value="IT">Italia</option>
+                          <option value="JP">Japón</option>
+                          <option value="KR">Corea del Sur</option>
+                          <option value="MY">Malasia</option>
+                          <option value="MX">México</option>
+                          <option value="NL">Países Bajos</option>
+                          <option value="NZ">Nueva Zelanda</option>
+                          <option value="NO">Noruega</option>
+                          <option value="PK">Pakistán</option>
+                          <option value="PE">Perú</option>
+                          <option value="PH">Filipinas</option>
+                          <option value="PL">Polonia</option>
+                          <option value="PT">Portugal</option>
+                          <option value="RU">Rusia</option>
+                          <option value="SA">Arabia Saudita</option>
+                          <option value="SG">Singapur</option>
+                          <option value="ZA">Sudáfrica</option>
+                          <option value="ES">España</option>
+                          <option value="SE">Suecia</option>
+                          <option value="CH">Suiza</option>
+                          <option value="TW">Taiwán</option>
+                          <option value="TH">Tailandia</option>
+                          <option value="TR">Turquía</option>
+                          <option value="UA">Ucrania</option>
+                          <option value="AE">Emiratos Árabes Unidos</option>
+                          <option value="GB">Reino Unido</option>
+                          <option value="US">Estados Unidos</option>
+                          <option value="VE">Venezuela</option>
+                          <option value="VN">Vietnam</option>
+                      </select>
+                  </div>
+                  <div class="form-control">
+                      <label for="budget">Presupuesto</label>
+                      <input type="text" name="budget" id="budget">
+                  </div>
+                  <div class="form-control">
+                      <label for="start-date">Fecha de inicio del proyecto</label>
+                      <input type="date" name="start-date" id="start-date">
+                  </div>
+                  <div class="form-control">
+                      <label for="project-type">Tipo de proyecto <span class="required">*</span></label>
+                      <select name="project-type" id="project-type" class="form-select">
+                          <option value="">Seleccione el tipo de proyecto</option>
+                          <option value="web-design">Diseño web</option>
+                          <option value="app-development">Desarrollo de aplicaciones móviles</option>
+                          <option value="only-front-end">Sólo Front-end</option>
+                          <option value="only-back-end">Sólo Back-end</option>
+                      </select>
+                  </div>
+                  <div class="form-control">
+                      <label for="how-found">¿Cómo nos encontraste?</label>
+                      <input type="text" name="how-found" id="how-found">
+                  </div>
+                  <div class="form-control">
+                      <label id="description" for="description">Cuéntanos más detalles: <span class="required">*</span></label>
+                      <textarea name="description" id="description" rows="5"></textarea>
+                  </div>
+                  <div class="form-terms">
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Acepto términos y condiciones</label>
+                    </div>
+                </div>
+                  <button type="submit">Enviar</button>
+                  <div class="form-help">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+              </form>
+          </section>
+      </main>
+      
+      
+        <footer>
+            <p>Proyecto Integrador</p>
+            <small>Pagina no comercial - Proyecto de CaC FullStack Phyton</small>
+        </footer>
+        <script src="/JS/formulario.js"></script>
+        <!-- Sólo permitir opciones vàlidas de email -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById('formContact');
+      const emailInput = document.getElementById('email');
+      
+      form.addEventListener('submit', function(event) {
+          // Validar formato de correo electrónico
+          if (!validateEmail(emailInput.value)) {
+              alert('Por favor, ingresa una dirección de correo electrónico válida.');
+              event.preventDefault(); // Evitar el envío del formulario
+          }
+      });
+      
+      // Función para validar el formato de correo electrónico utilizando una expresión regular
+      function validateEmail(email) {
+          const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para validar formato de email
+          return regex.test(email);
+      }
+  });
+</script>
+
+<!-- no dejar mandar formulario sin chequear antes esto  -->
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              const form = document.getElementById('formContact');
+              
+              form.addEventListener('submit', function(event) {
+                  // Verificar si se ha marcado el checkbox de términos y condiciones
+                  const termsCheckbox = form.querySelector('#terms');
+                  if (!termsCheckbox.checked) {
+                      alert('Por favor, acepta los términos y condiciones.');
+                      event.preventDefault(); // Evitar el envío del formulario
+                      return; // Detener la ejecución del código
+                  }
+                  
+                  // Verificar si hay campos obligatorios no completados
+                  const camposObligatorios = form.querySelectorAll('[required]');
+                  let faltanCompletar = false;
+      
+                  camposObligatorios.forEach(function(campo) {
+                      if (!campo.value.trim()) { // Verificar si el campo está vacío
+                          faltanCompletar = true;
+                      }
+                  });
+      
+                  // Si faltan completar campos, mostrar alerta y evitar el envío del formulario
+                  if (faltanCompletar) {
+                      alert('Por favor, completa todos los campos obligatorios.');
+                      event.preventDefault(); // Evitar el envío del formulario
+                  }
+              });
+          });
+      </script>
+      <!-- // no dejar enviar formulario si no aceptas terminos y condiciones        -->
+
+</body>
+</html>
