@@ -1,4 +1,3 @@
-// JS/main.js
 document.getElementById('menu-toggle').addEventListener('click', function() {
     document.getElementById('pagesNav').classList.toggle('show');
     document.getElementById('menu-toggle').style.display = 'none';
