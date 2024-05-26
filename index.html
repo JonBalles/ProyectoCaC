@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaC Proyecto</title>
-    <link rel="stylesheet" href="./CSS/allStyles.css" />
-    <script defer src="/JS/banner.js"></script>
+    <link rel="stylesheet" href="CSS/allStyles.css" />
+    <script defer src="JS/banner.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
     <header>
       <a href="/"><img src="./IMG/CaC.png" id="logo" alt="logo" /></a>
       <nav id="navbar">
+        <button id="menu-toggle" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
         <ul id="pagesNav">
-          <li><a class="link" href="/index.html"><span>Home</span></a></li>
-          <li><a class="link" href="/Sobre-Nosotros.html"><span>Sobre Nosotros</span></a></li>
-          <li><a class="link" href="/Nuestros_servicios.html"><span>Nuestos Servicios</span></a></li>
-          <li><a class="link" href="/formulario.html"><span>Contacto</span></a> </li>
+          <li><a class="link" href="index.html">
+            <i class="fas fa-home"></i>
+            <span>Home</span></a></li>
+          <li><a class="link" href="Sobre-Nosotros.html"><span>Sobre nosotros</span></a></li>
+          <li><a class="link" href="Nuestros_servicios.html"><span>Nuestros servicios</span></a></li>
+          <li><a class="link" href="formulario.html"><span>Contacto</span></a></li>
         </ul>
+        <button id="menu-close" aria-label="Close menu" style="display: none;">
+          <i class="fas fa-times"></i>
+        </button>
       </nav>
     </header>
     <main class="mainHome">
@@ -52,6 +61,7 @@
         <small>Pagina no comercial - Proyecto de CaC FullStack Phyton</small>
         </div>
       </footer>
-      <script src="/JS/texto.js"></script>
+      <script src="JS/texto.js"></script>
+      <script src="JS/button.js"></script>
   </body>
 </html>
