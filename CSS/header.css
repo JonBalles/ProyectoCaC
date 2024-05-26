@@ -6,6 +6,17 @@ header {
   display: flex
 }
 
+#hi{
+
+  padding: 5px;
+  color: var(--otro);
+}
+.link:hover #hi{
+  position: relative;
+color: var(--verde);
+z-index: 99;
+}
+
 #logo {
   margin: 10px;
   height: 70px;
@@ -41,6 +52,7 @@ header {
 }
 
 .link {
+  height: 50px;
   text-decoration: none;
   position: relative;
   display: flex;
@@ -52,6 +64,7 @@ header {
   overflow: hidden;
   cursor: pointer;
   border: none;
+  word-break: keep-all;
 }
 
 .link:after {
