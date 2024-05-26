@@ -188,7 +188,7 @@
 .mainHome .texto {
     flex-direction: column;
     display: flex;
-    height: 800px;
+    height: 620px;
     width: 100%;
     margin: 50px 0;
     padding: 0 20px;
@@ -211,7 +211,8 @@
 }
 
 .texto .subtitulo {
-    font-size: 40px;
+    font-size: 26px;
+    text-align: center;
     position: fixed;
     margin-left: 80px;
     position: relative;
@@ -262,13 +263,15 @@
 }
 
 .fondo.active {
-    width: 80%;
+    width: 100%;
 }
 
 
-@media (min-width: 320px){
+@media (max-width: 720px){
   .mainHome .texto{
-    height: 500px;
+    height: 700px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .info {
@@ -276,17 +279,20 @@
   }
   .texto .subtitulo {
     width: auto;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     margin-left: 0;
     font-weight: 600;
+
 }
 
 .info:hover span {
   width: 95%;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .fondo.active {

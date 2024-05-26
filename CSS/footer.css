@@ -54,3 +54,18 @@ footer{
 #integrantes li{
     margin: 0 10px;
 }
+
+
+@media (max-width: 720px){
+    footer{
+        height: 220px;
+    }
+
+    #integrantes ul{
+        height: auto;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        flex-direction: column;
+    }
+}

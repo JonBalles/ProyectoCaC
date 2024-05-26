@@ -119,19 +119,24 @@ z-index: 99;
   background: none;
   border: none;
   font-size: 30px;
-  color: #fff;
+  color: var(--otro);
   cursor: pointer;
   position: absolute;
   right: 20px;
 }
 
 @media (max-width: 768px) {
+header{
+  flex-direction: row;
+}
+
   #menu-toggle {
       display: block;
   }
 
   #menu-close.show {
       display: block;
+     
   }
 
   #pagesNav {
@@ -146,6 +151,9 @@ z-index: 99;
   }
 
   #navbar {
+      position: absolute;
       flex-direction: column;
+      top: 100px;
+      z-index: 10;
   }
 }
